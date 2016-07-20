@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, Keyboard! • A-Frame</title>
+    <meta name="description" content="VRCamp">
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.13.0/dist/aframe-extras.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  </head>
+  
+  <body>
+    <a-scene>
+      <a-box color="#2eb82e" width="5" height="8" depth="3" position="3 2 -7" rotation="0 45 0" scale="2 .5 3" src="texture.jpg">
+          <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"> </a-animation>
+      </a-box>
+
+      <a-sky src="360_image_1.jpg"></a-sky>
+
+
+       <a-entity id="sound-entity" sound="src:Beat_Your_Competition.mp3; autoplay: true"></a-entity> 
+
+
+      <a-camera position="0 0 2">
+        <a-cursor color="#FFFFFF"> </a-cursor>
+      </a-camera>
+
+      <a-cylinder color="#cc0000" height="4"S radius="2" position="0 -2 0"></a-cylinder>
+
+      <a-plane color="#4d2600" height="20" width="20" rotation="270 0 0"S position="0 -2 0"> </a-plane>
+
+      <a-collada-model src="charizard-pokemon-go.dae"></a-collada-model>
+
+    </a-scene>
+  </body>
+
+</html>
