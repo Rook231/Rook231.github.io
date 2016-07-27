@@ -12,16 +12,11 @@
   
     <body>
       <a-scene>
-        <a-box color="#2eb82e" width="5" height="8" depth="3" position="3 2 15" rotation="0 45 0" scale="2 .5 3" src="texture.jpg">
-          <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"> </a-animation>
+          <a-animation attribute="rotation" begin="click" repeat="indefinite" to="270 360 90"> </a-animation>
         <a-sky src="360_image_1.jpg"></a-sky>
-      <a-cone color="blue" radius-bottom=".02" radius-top="0.5" position=" -4 7 -10" rotation="-90 90 0"
-      >
-          <a-animation attribute="position" begin="2000" from="-4 7 -15" to="20 7 -15"></a-animation>
-      </a-cone>
+     
 
        <a-entity id="sound-entity" sound="src:Beat_Your_Competition.mp3; autoplay: true"></a-entity> 
-          <a-camera position="10 0 2">
             <a-cursor color="red"> </a-cursor>
           </a-camera>
       <a-light color="#006394" position="20 -6 17" intensity="1"></a-light>
@@ -31,20 +26,20 @@
       <!-- models -->
       <a-entity light="type: point; intensity: 0.75; distance: 50; decay: 2"
           position="0 10 10"></a-entity>
+      <a-entity position="10 10 10" geometry="primitive: box" material="color: red"
+          light="type: point; intensity: 2.0">
 
-      <a-collada-model class="pokemon"  src="charizard-pokemon-go.dae" position="20 -5 -20" rotation="0 150 0" look-at="270 270 0">
       </a-collada-model>
 
-      <a-collada-model class="pokemon" src="gyrados-pokemon-go.dae" position="-25 -5 -20" rotation="0 35 0">
+      <a-collada-model class="pokemon" src="gyrados-pokemon-go.dae" position="-25 0 -20" rotation="0 35 0">
      </a-collada-model>
 
-     <a-collada-model class="pokemon" src="scyther-pokemon-go.dae" position="0 -5 -25" rotation="0 190 0">
      </a-collada-model>.
 
-      <a-collada-model class="pokemon" src="moltres-pokemon-go.dae" position="-5 -5 -15" rotation="0 0 0">
      </a-collada-model>
 
-      <a-collada-model class="pokemon" src="dragonite-pokemon-go.dae" position="-25 -5 -5" rotation="0 250 0">
+     </a-collada-model>
+
      </a-collada-model>
 
 
