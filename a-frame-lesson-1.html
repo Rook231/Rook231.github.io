@@ -12,35 +12,57 @@
   
     <body>
       <a-scene>
-          <a-animation attribute="rotation" begin="click" repeat="indefinite" to="270 360 90"> </a-animation>
+        <!--<a-box color="#2eb82e" width="10" height="8" depth="1" position="3 2 15" rotation="0 45 0" scale="2 .5 3" src="texture.jpg" light="type: point; intensity: 2.0">
+        <a-light color="red" distance=".5" position="-15 10 15" intensity="2"></a-light>
+          <a-animation attribute="rotation" begin="click" repeat="indefinite" to="270 360 90"> </a-animation>-->
         <a-sky src="360_image_1.jpg"></a-sky>
      
-
-       <a-entity id="sound-entity" sound="src:Beat_Your_Competition.mp3; autoplay: true"></a-entity> 
+        <a-torus radius="200" radius-tubular="70" rotation="90 0 0" color="black"></a-torus>
+       <!--<a-entity id="sound-entity" sound="src:Beat_Your_Competition.mp3; autoplay: true"></a-entity>-->
+          <a-camera position="0 5 0">
             <a-cursor color="red"> </a-cursor>
           </a-camera>
       <a-light color="#006394" position="20 -6 17" intensity="1"></a-light>
 
-      <a-plane height:"10" length:"1" width:"2" position:"10 15 10">
+      <a-plane height="200" length="200" width="200" position="0 -15 0" rotation="270 0 0" color="black">
       </a-plane>
       <!-- models -->
-      <a-entity light="type: point; intensity: 0.75; distance: 50; decay: 2"
-          position="0 10 10"></a-entity>
-      <a-entity position="10 10 10" geometry="primitive: box" material="color: red"
-          light="type: point; intensity: 2.0">
 
+      <a-entity sound="src:CharizardCry.mp3">
+        <a-collada-model class="pokemon" src="charizard-pokemon-go.dae" position="0 0 0" rotation="0 150 0">
+          <a-light color="white" distance=".5" intensity="1" position="0 10 0"></a-light>
+        </a-collada-model>
+      </a-entity>
+
+      <a-entity sound="src:GyaradosCry.mp3">
+        <a-collada-model class="pokemon" src="gyrados-pokemon-go.dae" position="-25 0 -20" rotation="0 35 0">
+          <a-light color="white" distance=".5" intensity="1" position="0 10 0"></a-light>
       </a-collada-model>
+      </a-entity>
 
-      <a-collada-model class="pokemon" src="gyrados-pokemon-go.dae" position="-25 0 -20" rotation="0 35 0">
-     </a-collada-model>
+      <a-entity sound="src:ScytherCry.mp3">
+        <a-collada-model class="pokemon" src="scyther-pokemon-go.dae" position="0 0 -25" rotation="0 190 0">
+          <a-light color="white" distance=".5" intensity="1" position="0 10 0"></a-light>
+        </a-collada-model>.
+      </a-entity>
 
-     </a-collada-model>.
+      <a-entity sound="src:MoltresCry.mp3">
+        <a-collada-model class="pokemon" src="moltres-pokemon-go.dae" position="-5 0 -15" rotation="0 0 0">
+          <a-light color="white" distance=".5" intensity="1" position="0 10 0"></a-light>
+        </a-collada-model>
+      </a-entity>
 
-     </a-collada-model>
+      <a-entity sound="src:DragoniteCry.mp3">
+        <a-collada-model class="pokemon" src="dragonite-pokemon-go.dae" position="-25 0 -5" rotation="0 250 0"> 
+          <a-light color="white" distance=".5" intensity="1" position="0 10 0"></a-light>
+        </a-collada-model>
+      </a-entity>
 
-     </a-collada-model>
-
-     </a-collada-model>
+      <a-entity sound="src:ArticunoCry.mp3">
+        <a-collada-model class="pokemon" src="articuno-pokemon-go.dae" position="-25 0 -5" rotation="0 250 0">
+          <a-light color="white" distance=".5" intensity="1" position="0 10 0"></a-light>
+        </a-collada-model>
+      </a-entity>
 
 
       <script src="something.js"></script>
